@@ -1,0 +1,48 @@
+/* ============================================================================
+   App Component Styles
+   ============================================================================ */
+
+.app {
+  width: 100%;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+  text-shadow: 0 2px 4px rgba(37, 99, 235, 0.1);
+}
+
+.app-main {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.app-footer {
+  text-align: center;
+  margin-top: var(--spacing-lg);
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .app-header h1 {
+    font-size: 2rem;
+  }
+  
+  .app-main {
+    padding: var(--spacing-md);
+  }
+}

@@ -1,12 +1,14 @@
 {
-  "name": "vite",
+  "name": "tic-tac-toe-frontend",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "A modern Tic Tac Toe game with AI opponents",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.29.1",
@@ -17,6 +19,12 @@
   },
   "dependencies": {
     "@eslint/js": "^9.24.0",
-    "save-dev": "^0.0.1-security"
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^4.7.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "save-dev": "^0.0.1-security",
+    "typescript": "^5.8.3"
   }
 }
